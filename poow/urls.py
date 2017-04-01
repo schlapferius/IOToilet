@@ -7,7 +7,7 @@ from rest_framework import routers
 from poow.views import PooSessionViewSet
 
 router = routers.DefaultRouter()
-router.register(r'poosession', PooSessionViewSet)
+router.register(r'poo', PooSessionViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
