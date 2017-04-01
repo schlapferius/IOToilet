@@ -11,3 +11,10 @@ src/*.egg-info
 lib
 lib64
 __pycache__/
+.ebextensions/
+.elasticbeanstalk/config.yml
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
