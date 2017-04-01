@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Poo(models.Model):
-    uuid = models.CharField(max_length=5)
+    uuid = models.CharField(db_index=True, max_length=5)
 
 
 class Measure(models.Model):

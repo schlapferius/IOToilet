@@ -4,13 +4,13 @@ from django.shortcuts import render_to_response
 from poow.models import Measure
 
 
-def weather_chart_view(request):
+def shit_chart_view(request, uuid):
     #Step 1: Create a DataPool with the data we want to retrieve.
     weatherdata = \
         DataPool(
            series=
             [{'options': {
-               'source': Measure.objects.all()},
+               'source': Measure.objects.filter(poo__uuid=uuid)},
               'terms': [
                 'timestamp',
                 'sensor_fr',
