@@ -19,13 +19,13 @@ from django.contrib import admin
 
 from rest_framework_swagger.views import get_swagger_view
 
-from poow.views import shit_chart_view
+from iot.poow.views import shit_chart_view
 
 schema_view = get_swagger_view(title='IOToilette API')
 
 
 urlpatterns = [
-    url(r'^poow/', include('poow.urls')),
+    url(r'^poow/', include('iot.poow.urls')),
     url(r'^api-docs/', schema_view),
 
 

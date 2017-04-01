@@ -1,7 +1,7 @@
 from chartit import DataPool, Chart
 from django.shortcuts import render_to_response
 
-from poow.models import Measure
+from iot.poow.models import Measure
 
 
 def shit_chart_view(request, uuid):
