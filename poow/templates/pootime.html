@@ -4,17 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 
-		<title>Poo time</title>
+		<title>Your scores</title>
 		<meta name="description" content="A brand new website that offers you the knowledge of your poo.">
 		<link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-
 		<link rel="stylesheet" href="assets/style.css">
-		<script src="http://code.jquery.com/jquery-1.7.min.js"></script>
-	    <script src="https://github.highcharts.com/v2.2.0/highcharts.src.js"></script>
-
 	</head>
 
 	<body>
@@ -27,21 +23,26 @@
 
 				<nav>
 					<img src="img/logo.png" alt="logo_little_poo">
-					<a href="pootime.html">Poo time</a>
+					<a href="index.html">Poo time</a>
 				</nav>
 			</div>
 
-			<div id="container"
+			<div id='container'> Chart will be rendered here </div>
 
-			<h2>Best score of the week</h2>
-			<h3> 300g </h3
+			<h2>Your score </h2>
+			<h3> 300g </h3>
 
-			<p> Have you ever wonder what is your poo like?
-			You want to share your poo experience, but you cannot, because
-			there is no technology avaible to do this, but now you found the
-			perfect way to handle the situation.
+			<!-- code to include the highcharts and jQuery libraries goes here -->
+			<!-- load_charts filter takes a comma-separated list of id's where -->
+			<!-- the charts need to be rendered to                             -->
+			{% load chartit %}
+			{{ weatherchart|load_charts:"container" }}
 
-			Lets share to the world your experience.
+			<form>
+  			<label for="fname">Anything to say about your poo?</label>
+  			<input type="text" id="fname" name="fname">
+			</form>
+
 
 
 
