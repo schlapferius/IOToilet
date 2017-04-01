@@ -4,7 +4,7 @@ from django.conf.urls import url, include
 from rest_framework import routers
 
 # Routers provide an easy way of automatically determining the URL conf.
-from poow.viewset import PooSessionViewSet
+from iot.poow.viewset import PooSessionViewSet
 
 
 router_poo = routers.SimpleRouter(trailing_slash=False)

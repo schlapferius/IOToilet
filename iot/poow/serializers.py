@@ -1,7 +1,7 @@
 
 from rest_framework import serializers
 
-from poow.models import Poo, Measure
+from iot.poow.models import Poo, Measure
 
 
 

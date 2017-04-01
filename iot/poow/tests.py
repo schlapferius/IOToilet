@@ -1,7 +1,7 @@
 from django.test import TestCase
 
 # Create your tests here.
-from poow.models import Poo, Measure
+from iot.poow.models import Poo, Measure
 
 
 class PooTestCase(TestCase):
